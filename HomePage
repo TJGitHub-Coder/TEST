@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<script src="/httptohttps.js" defer></script>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TobyLearn- Learn a fun way !</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.com/74dc5576-cfbf-4a2a-a03b-7aad680e4760%2FTobyLearn%20Logo.jpg?v=1571603160715"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <ul id="navbar" class="middle-horisontal">
+      <li><a class="buttona" href="/">Home</a></li>
+      <li><a class="buttona" href="about.html">About us</a></li>
+      <li><a class="buttona" href="contact.html">Contact us</a></li>
+    </ul>
+<script>
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+var val = ''
+if (getCookie("loggin") == 0) {
+  val = 'Login';
+  loc = 'login';
+} else {
+  val = 'Logout';
+  loc = 'logout';
+};
+document.getElementById("loginout").innerHTML = val;
+document.getElementById("loginout").href = loc + '.html';
+</script>
+    <br><br><br>
+    <div class="middle-horizontal">
+      <div class="Header">
+        <h1>
+          <img id="logo"
+            src="https://cdn.glitch.com/74dc5576-cfbf-4a2a-a03b-7aad680e4760%2FTobyLearn%20Logo.jpg?v=1571603160715"
+            alt="TobyLearn"
+          />
+        </h1>
+        <h2>
+          The website where you can learn !
+        </h2>
+      </div>
+  
+      <a href="learn.html" class="buttona">Click here for videos!</a><br>
+
+      <br>
+     <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
+       <script type="text/javascript">
+(function(){
+window['gobot'] = window['gobot'] || function(){(window['gobot'].queue = window['gobot'].queue || []).push(arguments)}
+var script = document.createElement('script')
+script.async = 1
+script.src = 'https://www.getgobot.com/app/v1/gobot-client.js'
+var insert = document.getElementsByTagName('script')[0]
+insert.parentNode.insertBefore(script, insert)
+})()
+gobot('create', '-LrezZofF83c9dzI4b_K')
+gobot('pageview')
+</script>
+    
+      <p>
+        Learn for free. All music done by NoCopyrightSounds(NCS).
+      </p>
+      <iframe width="560" height="315" src="https://cdn.glitch.com/74dc5576-cfbf-4a2a-a03b-7aad680e4760%2FINTRO-%20TobyLearn%20Mp4.mp4?v=1571852518685" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    </div>
+    <div class="footer">
+      <p class="justify">
+        Made by Toby ! Please enjoy ! If there is any problems just email 'officaltjnyland@gmail.com' Thank you !
+      </p>
+    </div>
+    <br><br><br><br><br>
+  </body>
+</html>
